@@ -8,6 +8,7 @@ import java.util.TreeSet;
 public class SetExample {
     public static void main(String[] args) {
 
+        // HashSet
         Set<String> planetsSet = new HashSet<>();
 
         planetsSet.add("Mercury");
@@ -31,6 +32,7 @@ public class SetExample {
         System.out.println("planetsSet cодержит объект 'Mars'? Ответ: " + planetsSet.contains("Mars"));
         System.out.println("planetsSet cодержит объект 'Venus'? Ответ: " + planetsSet.contains("Venus"));
 
+        // LinkedHashSet
         Set<String> planetsLinkedSet = new LinkedHashSet<>();
 
         planetsLinkedSet.add("Mercury");
@@ -41,6 +43,7 @@ public class SetExample {
         System.out.println("planetsLinkedSet после инициализации (учитывается порядок добавления объектов): ");
         System.out.println(planetsLinkedSet);
 
+        // TreeSet
         Set<String> planetsTreeSet = new TreeSet<>();
 
         planetsTreeSet.add("Mercury");
@@ -49,7 +52,7 @@ public class SetExample {
         planetsTreeSet.add("Mars");
         planetsTreeSet.add("Jupiter");
 
-        System.out.println("planetsTreeSet после инициализации (сортировка в алфавитном порядке идет по умолчанию): ");
+        System.out.println("planetsTreeSet после инициализации (сортировка в алфавитном порядке): ");
         System.out.println(planetsTreeSet);
     }
 }
