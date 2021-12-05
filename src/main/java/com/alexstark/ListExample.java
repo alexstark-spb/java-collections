@@ -6,6 +6,7 @@ import java.util.List;
 
 public class ListExample {
     public static void main(String[] args) {
+
         List<String> fruitsList = new ArrayList<>();
 
         fruitsList.add("apple");
@@ -27,7 +28,7 @@ public class ListExample {
             fruitsList.remove("melon");
             System.out.println(fruitsList);
 
-        if (fruitsList.contains("banana")) {
+        if (fruitsList.contains("melon")) {
             String example = fruitsList.get(1);
             System.out.println();
             System.out.println(example);
